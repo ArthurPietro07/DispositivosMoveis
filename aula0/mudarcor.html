@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Kids</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 50px;
+            background-color: rgb(255, 254, 240);
+        }
+
+        img {
+            border: 4px solid rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="corh1">TCC - Happy Kids</h1>
+    <p id="resumo"></p>
+    <button  onclick="document.getElementById('resumo').innerHTML='O nosso TCC tem como objetivo de fazer um sistema de gerenciamento para a empresa de locação de brinquedos Happy'">Mostrar objetivo</button>
+    <br>
+    <br>
+    <img id="corimg"
+        src="https://scontent-gig4-2.xx.fbcdn.net/v/t39.30808-1/427915082_1746812215802910_905578948065605172_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=7j7MnFcVoLoQ7kNvwFNBf9o&_nc_oc=AdkcWCHO7tQnS6wHbfD3j16NfF4hZ1-88XQBM-xK4JMEm52Apemz7l7h6gxfhBf7W84&_nc_zt=24&_nc_ht=scontent-gig4-2.xx&_nc_gid=ocnzjy5oTXs4gt-PK1fiTA&_nc_ss=8&oh=00_AfzGSlhs_BhUle6uhrBHDc6EgNorUyxCH9t94i_cwLJs6Q&oe=69AE04F3">
+    <br><br>
+    <button style="color: rgb(55, 116, 248);" onclick="mudarCor('rgb(55, 116, 248)');">Azul</button>
+    <button style="color: rgb(213, 0, 213);" onclick="mudarCor('rgb(213, 0, 213)');">Rosa</button>
+    <button style="color: black" onclick="mudarCor('black');">Preto</button>
+    <script>
+        function mudarCor(novaCor) {
+            var elementoh1 = document.getElementById("corh1");
+            elementoh1.style.color = novaCor;
+            var elementoimg = document.getElementById("corimg");
+            elementoimg.style.borderColor = novaCor;
+
+        }
+        function djihajfdh(){
+            var img = document.getElementById("corimg");
+            if (img.src.includes(" https://scontent-gig4-2.xx.fbcdn.net/v/t39.30808-1/427915082_1746812215802910_905578948065605172_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=7j7MnFcVoLoQ7kNvwFNBf9o&_nc_oc=AdkcWCHO7tQnS6wHbfD3j16NfF4hZ1-88XQBM-xK4JMEm52Apemz7l7h6gxfhBf7W84&_nc_zt=24&_nc_ht=scontent-gig4-2.xx&_nc_gid=ocnzjy5oTXs4gt-PK1fiTA&_nc_ss=8&oh=00_AfzGSlhs_BhUle6uhrBHDc6EgNorUyxCH9t94i_cwLJs6Q&oe=69AE04F3")) {
+                img.src = "https://xalingo.vteximg.com.br/arquivos/ids/155437-1000-1000/0922.3---Gangorra-Cavalinho-Vermelho.jpg?v=637303438758170000";
+            } else {
+                img.src = "https://scontent-gig4-2.xx.fbcdn.net/v/t39.30808-1/427915082_1746812215802910_905578948065605172_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=104&ccb=1-7&_nc_sid=1d2534&_nc_ohc=7j7MnFcVoLoQ7kNvwFNBf9o&_nc_oc=AdkcWCHO7tQnS6wHbfD3j16NfF4hZ1-88XQBM-xK4JMEm52Apemz7l7h6gxfhBf7W84&_nc_zt=24&_nc_ht=scontent-gig4-2.xx&_nc_gid=ocnzjy5oTXs4gt-PK1fiTA&_nc_ss=8&oh=00_AfzGSlhs_BhUle6uhrBHDc6EgNorUyxCH9t94i_cwLJs6Q&oe=69AE04F3"
+        }}
+    </script>
+</body>
+
+</html>
