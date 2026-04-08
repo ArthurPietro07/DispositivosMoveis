@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let nome = window.prompt("Digite o seu nome: ");
+        let altura = parseInt(window.prompt("Digite a sua altura: "));
+        let peso = parseInt(window.prompt("Digite o seu peso: "));
+        let imc = peso/(altura*altura)
+        if (imc > 24.9) {
+            window.alert("Acima do peso");
+        } else if (imc < 18.5) {
+           window.alert("Abaixo do peso");
+        } else {
+            window.alert("Peso normal");
+        }
+    </script>
+</body>
+
+</html>

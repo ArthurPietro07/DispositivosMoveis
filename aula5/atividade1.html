@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nota1 = parseInt(window.prompt("Digite a primeira nota: "));
+        let nota2 = parseInt(window.prompt("Digite a segunda nota: "));
+        let nota3 = parseInt(window.prompt("Digite a terceira nota: "));
+        let nota4 = parseInt(window.prompt("Digite a quarta nota: "));
+        let soma = (nota1 + nota2 + nota3 + nota4)/4;
+        if (soma > 6.99 && soma <= 10) {
+            window.alert("Aprovado");
+        } else if (soma > 3.99 && soma < 7){ 
+             window.alert("Recuperação");
+        } else if (soma < 4 && soma >= 0){
+            window.alert("Reprovado");
+        } else if (soma > 10 || soma < 0){
+            window.alert("Você digitou algo errado");
+        }
+    </script>
+</body>
+</html>
