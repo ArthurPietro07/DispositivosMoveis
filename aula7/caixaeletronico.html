@@ -1,0 +1,38 @@
+<script>
+    let saldo = 1000;
+    let opcao = prompt(`Saldo atual: R$ ${saldo.toFixed(2)}\nEscolha uma opção:\n1 - Sacar\n2 - Depositar\n3 - Consultar saldo\n4 - Sair`).toLowerCase();
+    switch (opcao) {
+        case "1":
+        case "sacar":
+            let valorSaque = Number(prompt("Digite o valor para sacar:"));
+            if (valorSaque > saldo) {
+                alert("Saldo insuficiente!");
+            } else if (valorSaque <= 0 || isNaN(valorSaque)) {
+                alert("Valor inválido para saque.");
+            } else {
+                saldo -= valorSaque;
+                alert(`Saque realizado. Novo saldo: R$ ${saldo.toFixed(2)}`);
+            }
+            break;
+        case "2":
+        case "depositar":
+            let valorDeposito = Number(prompt("Digite o valor a ser depositado:"));
+            if (valorDeposito <= 0 || isNaN(valorDeposito)) {
+                alert("Valor inválido para depósito.");
+            } else {
+                saldo += valorDeposito;
+                alert(`Depósito realizado. Novo saldo: R$ ${saldo.toFixed(2)}`);
+            }
+            break;
+        case "3":
+        case "consultar saldo":
+            alert(`Seu saldo é: R$ ${saldo.toFixed(2)}`);
+            break;
+        case "4":
+        case "sair":
+            alert("Obrigado por usar nossos serviços!");
+            break;
+        default:
+            alert("Opção inválida! Por favor, escolha uma opção válida.");
+    }
+</script>
