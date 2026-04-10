@@ -1,0 +1,22 @@
+<script>
+    let senha = "";
+    const LIMITE = 3;
+    let tentativas = 0;
+    const SENHA_CORRETA = "1234";
+
+    while (tentativas < LIMITE) {
+        senha = prompt(`Tentativa ${tentativas + 1}/${LIMITE}: Digite a senha:`);
+        if (senha === SENHA_CORRETA) {
+            alert("Acesso permitido!");
+            break;
+        } else {
+            alert("Senha incorreta!");
+            tentativas++;
+        }
+    }
+        if (tentativas === LIMITE) {
+            alert("Conta bloqueada!");
+        }
+    
+    alert("Acesso permitido!");
+</script>

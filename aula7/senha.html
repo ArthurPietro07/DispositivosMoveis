@@ -1,0 +1,12 @@
+<script>
+    let senha = "";
+    const SENHA_CORRETA = "1234";
+
+    while (senha !== SENHA_CORRETA) {
+        senha = prompt("Digite a senha:");
+        if (senha !== SENHA_CORRETA) {
+            alert("Senha incorreta. Tente novamente.");
+        }
+    }
+    alert("Acesso permitido!");
+</script>
