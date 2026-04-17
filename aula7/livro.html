@@ -2,18 +2,19 @@
     let continuar;
     let livros = [];
 
-    do{
+    do {
         let livro = prompt("Digite o nome do livro que você leu:");
 
         if (livro == null || livro.trim() === "") {
             alert("O nome do livro não pode estar vazio!");
-        continue;
+            continue;
         }
 
         livros.push(livro);
 
-        continuar = prompt("Deseja adicionar outro livro? (s/n)")?.toLowerCase();}while (continuar === "s");
+        continuar = prompt("Deseja adicionar outro livro? (s/n)")?.toLowerCase();
+    } while (continuar === "s");
 
-        alert(`Você cadastrou ${livros.length} livro(s):\n\n${livros.join("\n")}`);
-        
+    alert(`Você cadastrou ${livros.length} livro(s):\n\n${livros.join("\n")}`);
+
 </script>

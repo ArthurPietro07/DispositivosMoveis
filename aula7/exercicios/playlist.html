@@ -1,0 +1,17 @@
+<script>
+    let playlist = [];
+
+    do {
+        let musica = prompt("Digite o nome da música que queira adicionar na playlist:");
+
+        if (musica == null || musica.trim() === "") {
+            alert("O nome da música nao pode estar vazio");
+            continue;
+        }
+
+        playlist.push(musica);
+    } while (musica !== "fim");
+
+    alert(`Você colocou ${playlist.length} músicas:\n\n${playlist.join("\n")}`);
+
+</script>

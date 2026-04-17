@@ -1,0 +1,28 @@
+<script>
+    let notas = [];
+    let num1 = parseFloat(prompt("Digite o primeiro nota:"));
+    let num2 = parseFloat(prompt("Digite o segundo nota:"));
+    let num3 = parseFloat(prompt("Digite o terceiro nota:"));
+    let num4 = parseFloat(prompt("Digite a quarta nota:"));
+    let media = (num1 + num2 + num3 + num4) / 4;
+    notas.push(num1, num2, num3, num4);
+    if (media >= 7) {
+        alert("Aprovado");
+         for (let i = 0; i < notas.length; i++) {
+            document.write(`Nota ${i + 1}: ${notas[i]}<br>`)
+        }
+    } else if (media >= 4) {
+        alert("Recuperação");
+         for (let i = 0; i < notas.length; i++) {
+            document.write(`Nota ${i + 1}: ${notas[i]}<br>`)
+        }
+    } else if (isNaN(media)) {
+        alert("Insira números válidos");
+    } else {
+        alert("Reprovado");
+        for (let i = 0; i < notas.length; i++) {
+        for (let i = 0; i < notas.length; i++) {
+            document.write(`Nota ${i + 1}: ${notas[i]}<br>`)
+        }
+    }
+</script>

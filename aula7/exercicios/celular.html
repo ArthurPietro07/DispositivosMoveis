@@ -1,0 +1,19 @@
+<script>
+    let totalHoras = 0
+    let dias = ["segunda", "terça", "quarta", "quinta", "sexta", "sábado", "domingo"]
+    for (let i = 0; i < 7; i++) {
+        let horas = parseInt(window.prompt(`Escreva, em horas, quanto tempo passou no celular (${dias[i]}):`));
+        totalHoras = + horas;
+    }
+     let media = totalHoras / 7;
+
+        if (isNaN(media)) {
+            alert("Você digitou algo errado");
+        } else if (media > 5) {
+            alert("Uso excessivo");
+        } else if (media >= 3) {
+            alert("Fique atento");
+        } else {
+            alert("Uso saudável");
+        }
+</script>

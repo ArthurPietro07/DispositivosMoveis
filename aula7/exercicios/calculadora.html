@@ -1,0 +1,30 @@
+<script>
+    do {
+        let operacao = prompt("O que desejas fazer?\n1 - Somar\n2 - Subtrair\n3 - Multiplicar\n4 - Dividir\n5 - Sair");
+        let num1 = parseInt(prompt("Digite o primeiro número:"));
+        let num2 = parseInt(prompt("Digite o segundo número:"));
+        switch (operacao) {
+            case "1":
+                alert(`O resultado da soma é: ${num1 + num2}`);
+                break;
+            case "2":
+                alert(`O resultado da subtração é: ${num1 - num2}`);
+                break;
+            case "3":
+                alert(`O resultado da multiplicação é: ${num1 * num2}`);
+                break;
+            case "4":
+                if (num2 !== 0) {
+                    alert(`O resultado da divisão é: ${num1 / num2}`);
+                } else {
+                    alert("Não é possível dividir por zero.");
+                }
+                break;
+            case "5":
+                alert("Saindo da calculadora.");
+                break;
+            default:
+                alert("Operação inválida. Por favor, escolha uma opção válida.");
+        }
+    } while (operacao !== "5");
+</script>
