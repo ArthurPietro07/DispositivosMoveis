@@ -1,17 +1,20 @@
 <script>
     let playlist = [];
+    let musica;
 
     do {
-        let musica = prompt("Digite o nome da música que queira adicionar na playlist:");
+        musica = prompt("Digite o nome da música que queira adicionar na playlist:");
 
-        if (musica == null || musica.trim() === "") {
-            alert("O nome da música nao pode estar vazio");
+        if (musica === null || musica.trim() === "") {
+            alert("O nome da música não pode estar vazio");
             continue;
         }
 
-        playlist.push(musica);
-    } while (musica !== "fim");
+        if (musica.toLowerCase() !== "fim") {
+            playlist.push(musica);
+        }
+
+    } while (musica.toLowerCase() !== "fim");
 
     alert(`Você colocou ${playlist.length} músicas:\n\n${playlist.join("\n")}`);
-
 </script>

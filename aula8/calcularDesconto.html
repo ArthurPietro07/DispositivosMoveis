@@ -1,0 +1,13 @@
+<script>
+let preco = window.prompt("Digite o preço do produto:");
+let percentual = window.prompt("Digite o percentual de desconto:");
+if (isNaN(preco) || isNaN(percentual)) {
+    alert("Por favor, insira valores numéricos válidos para o preço e o percentual de desconto.");
+} else {
+function calcularDesconto(preco, percentual) {
+    return preco - (preco * percentual / 100);
+}
+
+    alert(`O preço com desconto é ${calcularDesconto(preco, percentual)}.`);
+}
+</script>
