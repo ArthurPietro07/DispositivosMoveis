@@ -1,0 +1,21 @@
+
+<script>
+    let idade = window.prompt("Digite sua idade:");
+    function calcularPremio(idade) {
+     if (isNaN(idade)) {
+            alert("Idade inválida. Por favor, insira um número.");
+        }
+        else if (idade < 17) {
+            alert("Categoria juvenil\nPrêmio: " + idade * 10);
+        } else if (idade < 25) {
+            alert("Categoria junior\nPrêmio: " + idade * 8);
+        } else if (idade < 46) {
+            alert("Categoria adulto 1\nPrêmio: " + idade * 6);
+        } else if (idade < 56) {
+            alert("Categoria adulto 2\nPrêmio: " + idade * 5);
+        } else {
+            alert("Categoria master\nPrêmio: " + idade * 4);
+        }
+    }
+    calcularPremio(idade);
+</script>
