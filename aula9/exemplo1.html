@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aula DOM</title>
+</head>
+
+<body>
+    <h1 id="titulo1"> Exemplo1 - DOM</h1>
+    <main class="cprincipal" id="idprincipal">
+        <h2 id="subtitulo1">Subtitulo 1</h2>
+        <p>Primeiro paragrafo do Subtitulo 1</p>
+    </main>
+    <section class="cseção" id="idseção">
+        <h2>Subtitulo 2</h2>
+        <p class="paragrafo1">Primeiro paragrafo do Subtitulo 2</p>
+        <p class="paragrafo1">Segundo paragrafo do Subtitulo 2</p>
+    </section>
+    <script>
+        document.querySelector("h1").textContent = "Troquei por isso aqui";
+        document.getElementById("subtitulo1").textContent = "Troquei por isso aqui agora mesmo";
+        document.getElementsByClassName("paragrafo1")[0].textContent = "Trocando o 1° parágrafo";
+        document.getElementsByClassName("paragrafo1")[1].textContent = "Trocando o 2° parágrafo";
+    </script>
+</body>
+
+</html>
