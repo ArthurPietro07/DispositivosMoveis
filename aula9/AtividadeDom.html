@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mudar Cor</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    #caixa {
+      width: 200px;
+      height: 200px;
+      background-color: gray;
+      margin: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Digite uma cor</h1>
+
+  <div id="caixa"></div>
+
+  <input type="text" id="cor" placeholder="vermelho, azul, verde...">
+
+  <button onclick="mudarCor()">
+    Mudar Cor
+  </button>
+
+  <script>
+    function mudarCor() {
+      let cor = document.getElementById("cor").value;
+      const caixa = document.getElementById("caixa");
+
+      if (cor == "vermelho") {
+        caixa.style.backgroundColor = "red";
+      }
+
+      if (cor == "azul") {
+        caixa.style.backgroundColor = "blue";
+      }
+
+      if (cor == "verde") {
+        caixa.style.backgroundColor = "green";
+      }
+
+      if (cor == "amarelo") {
+        caixa.style.backgroundColor = "yellow";
+      }
+
+      if (cor == "preto") {
+        caixa.style.backgroundColor = "black";
+      }
+
+      if (cor == "branco") {
+        caixa.style.backgroundColor = "white";
+      }
+
+      if (cor == "rosa") {
+        caixa.style.backgroundColor = "pink";
+      }
+
+      if (cor == "roxo") {
+        caixa.style.backgroundColor = "purple";
+      }
+
+      if (cor == "laranja") {
+        caixa.style.backgroundColor = "orange";
+      }
+
+      if (cor == "marrom") {
+        caixa.style.backgroundColor = "brown";
+      }
+
+      if (cor == "cinza") {
+        caixa.style.backgroundColor = "gray";
+      }
+    }
+  </script>
+
+</body>
+</html>
